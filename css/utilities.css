@@ -1,0 +1,36 @@
+/* ==========================================================================
+   UTILITIES: classes for accessibility, visibility, colors, and typography.
+   ========================================================================== */
+
+@layer utilities {
+  .visually-hidden:not(:focus):not(:active) {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip-path: inset(50%) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+
+  .sprite {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .text-accent {
+    color: var(--color-accent);
+  }
+
+  .mono {
+    font-family: var(--font-mono);
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+}
